@@ -15,104 +15,57 @@
 // console.log(getStr("ali valiyev"));
 // ===========================================
 
-// function app(str) {
-//   let sum = 0;
-//   for (let i in str) {
-//     sum++;
-//   }
-//   return sum;
+
+// UYGA VAZIFA
+// let names = ["Vali", "Hasan", "Husan"];
+// names.push("Sardor");
+// names.shift();
+// console.log(names.includes("Ali"));
+// console.log(names);
+
+// let users = ["Ali", "Vali"];
+// users.unshift("Sardor", "Jasur", "Dilshod");
+// users.pop();
+// console.log(users.join(", "));
+
+// let products = ["Apple", "Banana", "Orange", "Apple", "Kiwi"];
+// let firstIndex = products.indexOf("Apple");
+// let lastIndex = products.lastIndexOf("Apple");
+// console.log(firstIndex, lastIndex);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let middle = arr.slice(3, 7);
+// console.log(middle);
+
+// let str = "toshkent-samarqand-buxoro";
+// let cities = str.split("-");
+// console.log(cities.at(1));
+
+// let shop1 = ["Non", "Sut"];
+// let shop2 = ["Go'sht", "Sabzi"];
+// let all = shop1.concat(shop2);
+// console.log(all.includes("Non"));
+// console.log(all.indexOf("Non"));
+
+// let cart = ["Telefon", "Mouse", "Quloqchin", "Printer"];
+// cart.splice(3, 1, "Monitor", "Klaviatura");
+// console.log(cart);
+
+// let word = "Javascript";
+// let reversed = word.split("").reverse().join("");
+// console.log(reversed);
+
+// let ids = [1, 2, 3, 4];
+// let newId = 3;
+// if (ids.includes(newId)) {
+//   console.log("Bu ID allaqachon mavjud");
+// } else {
+//   ids.push(newId);
 // }
-// console.log(app("salom"));
-// ========================================
+// console.log(ids);
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let array = [-32, -23, -45, -34, -11];
-
-function sum(arr) {
-  let summa = 0;
-  for (let i of arr) {
-    summa += i;
-  }
-  return summa;
-}
-// console.log(sum(arr));
-
-function juftlar(arr) {
-  let juft_sonlar = [];
-  for (let i of arr) {
-    if (i % 2 == 0) {
-      juft_sonlar.push(i);
-    }
-  }
-  return juft_sonlar;
-}
-// console.log(juftlar(arr));
-
-function find9(arr) {
-  for (let i of arr) {
-    if (i == 9) {
-      return i;
-    }
-  }
-  return undefined;
-}
-// console.log(find9(arr));
-
-function up2(arr) {
-  let arrNew = [];
-  for (let i of arr) {
-    arrNew.push(i + 2);
-  }
-  return arrNew;
-}
-// console.log(up2(arr));
-
-function is6(arr) {
-  for (let i of arr) {
-    if (i % 6 == 0) {
-      return true;
-    }
-  }
-  return false;
-}
-// console.log(is6(arr));
-
-function manfiyMi(arr) {
-  let isTrue = true;
-  for (let i of arr) {
-    if (i >= 0) {
-      isTrue = false;
-    }
-  }
-  if (isTrue) return true;
-  else return false;
-}
-// console.log(manfiyMi(array));
-
-let arr2 = [3, 1, 76, 23, 8, 2, 32, 9];
-function toOrder(arr) {
-  let newArr = [];
-  while (arr.length) {
-    let mini = arr[0];
-    for (let i of arr) {
-      if (i < mini) {
-        mini = i;
-      }
-    }
-    newArr.push(mini);
-    arr.splice(mini);
-  }
-  return newArr;
-}
-console.log(toOrder(arr2));
-
-// for (let j = 0; j < arr.length; j++) {
-//   let mini = arr[0];
-//   for (let i of arr) {
-//     if (i < mini) {
-//       mini = i;
-//     }
-//   }
-//   newArr.push(mini);
-//   arr.splice(mini);
-// }
+// let months = ["Yanvar", "Fevral", "Mart", "Aprel"];
+// months.splice(2, 0, "Bahor");
+// let newArr = months.slice(0, 2);
+// let result = newArr.concat(months);
+// console.log(result.join(", "));
