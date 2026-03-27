@@ -1,0 +1,207 @@
+/* league-spartan-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/league-spartan-v15-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/league-spartan-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/league-spartan-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/league-spartan-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-white: rgba(255, 255, 255, 1);
+  --text-black: rgb(17, 17, 17);
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+body {
+  position: relative;
+
+  font-family: "League Spartan";
+  display: flex;
+  flex-direction: column;
+}
+
+/* header part */
+header {
+  height: 100vh;
+  background-image: url(./imgs/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 153px;
+  padding-top: 65px;
+  padding-left: 165px;
+}
+
+.header-content {
+  max-width: 507px;
+
+  h1 {
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    color: var(--text-white);
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    margin-bottom: 40px;
+    color: var(--text-white);
+  }
+}
+
+.btn-head {
+  background-color: var(--text-black);
+  border: var(--text-white) 2px solid;
+  width: 245px;
+  height: 64px;
+  top: 558px;
+  left: 165px;
+  opacity: 1;
+  color: var(--text-white);
+
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+}
+
+.btn-head:hover {
+  background-color: var(--text-white);
+  color: var(--text-black);
+}
+
+/* hero part */
+main {
+  flex-grow: 1;
+}
+
+/* hero part */
+.hero {
+  background-image: url(./imgs/bg2.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.hero-container {
+  display: flex;
+  gap: 125px;
+  align-items: center;
+}
+
+.hero-content {
+  margin-top: 177px;
+  margin-left: auto;
+  margin-bottom: 319px;
+  max-width: 445px;
+  img {
+    margin-bottom: 58px;
+  }
+  h2 {
+    color: var(--text-black);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    margin-bottom: 27px;
+  }
+  p {
+    color: var(--text-black);
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0px;
+  }
+}
+
+.pic1 {
+  position: absolute;
+  top: 750px;
+}
+
+/* main main part */
+.main {
+  height: 1000px;
+  background-image: url(./imgs/bg3.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  margin-top: 177px;
+  margin-right: auto;
+  max-width: 445px;
+
+  img {
+    margin-bottom: 58px;
+  }
+  h2 {
+    color: var(--text-black);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    margin-bottom: 27px;
+  }
+  p {
+    color: var(--text-black);
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0px;
+  }
+}
+
+.pic2 {
+  position: absolute;
+  left: 775px;
+  bottom: -20px;
+}
